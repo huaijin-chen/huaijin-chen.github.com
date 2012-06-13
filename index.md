@@ -5,9 +5,9 @@ tagline: Huaijin-Chen
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start] (http://jekyllbootstrap.com/usage/jekyll-quick-start.html) huaiaiem
-
 #Aboute Me
+
+![Alt text](images/touxiang.jpg)
 
 ##Basic
 My name is ChenChao(陈超).I always use `huaijin` in the Internet .
@@ -26,10 +26,8 @@ My Email: (If Unixer/Linuxer you are)
 
 ##Intrestings
 1. I love reading books,
-	for example, literure,Math,Biology,psy and so on.
-2. I am a guy in Computer Science,
-	my resereach in Computer Vision & Machine Learning.
-3. I am also a travler.
+	for example, Literure,Math,Biology,Psychology and so on.
+2. I am a guy in Computer Science, expcailly Computer Vision & Machine Learning.
 
 
 	
