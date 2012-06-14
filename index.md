@@ -29,15 +29,3 @@ My Email: (If Unixer/Linuxer you are)
 	for example, Literure,Math,Biology,Psychology and so on.
 2. I am a guy in Computer Science, expcailly Computer Vision & Machine Learning.
 
-
-	
-
-
-#Blog List
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
