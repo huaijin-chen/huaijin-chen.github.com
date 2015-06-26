@@ -1,0 +1,54 @@
+---
+layout: book
+title: 2015年阅读书单
+category: 读书
+keywords: 阅读,书单,2015
+books: 
+    - title: 亚细亚的孤儿
+      status: 在读
+      author: 吳濁流
+      publisher: 遠景
+      language: 中文
+      link: http://book.douban.com/subject/2009489/
+      cover: http://img6.douban.com/lpic/s3190317.jpg
+      description: 
+    - title: 跑步，该怎么跑？
+      status: 未读
+      author: （美）尼可拉斯·罗曼诺夫、约翰·罗伯逊 / 徐国锋 
+      publisher: 新星出版社
+      language: 中文
+      link: http://book.douban.com/subject/5981419/
+      cover: http://img6.douban.com/lpic/s26710680.jpg
+      description: 
+- title: Foundation
+      status: 未读
+      author: Isaac Asimov
+      publisher: Ballantine Books
+      language: English
+      link: 
+      cover: /public/img/books/foundation.jpg
+      description:
+- title: Foundation and Empire
+      status: 未读
+      author: Isaac Asimov
+      publisher: Ballantine Books
+      language: English
+      link: 
+      cover: /public/img/books/Second-foundation.jpg
+      description:
+- title: Second Foundation
+      status: 未读
+      author: Isaac Asimov
+      publisher: Ballantine Books
+      language: English
+      link: 
+      cover: /public/img/books/book-foundation2.jpg
+      description:
+
+---
+
+
+
+
+     
+  
