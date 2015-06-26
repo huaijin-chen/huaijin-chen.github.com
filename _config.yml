@@ -24,11 +24,11 @@ favicon: /public/img/deer3.png
 # google analytics 设置
 ga:
   id: UA-54262064-1 
-  url: painterlin.com
+  url: huaijin.info
 
 # disqus 设置
 disqus:
-  shortname: painterlin
+  shortname: huaijin
 
 # 主题设置，自动激活某个标签
 active: 读书

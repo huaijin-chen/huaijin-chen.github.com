@@ -1,0 +1,598 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>大数据机器学习初探---南大李武军 | Huaijin的博客</title>
+<meta name="author" content="Huaijin Chen">
+
+  <meta name="keywords" content="组会">
+
+
+<link rel="shortcut icon" href="/public/img/deer3.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/public/css/bootstrap.css">
+<link rel="stylesheet" href="/public/css/font-awesome.css">
+<link rel="stylesheet" href="/public/js/prettify/prettify.css">
+<link rel="stylesheet" href="/public/css/base.css">
+<link href="/pages/atom.xml" rel="alternate" title="Huaijin的博客" type="application/atom+xml">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-lg-3 col-sm-13 col-xs-13 aside visible-md visible-lg">
+  <div class="row">
+    <div class="col-md-2 col-xs-2 aside1">
+      <br>
+      <a class="pjaxlink" href="/"><img src="/public/img/deer3.png" class="img-ronuded avatar" style="border-width:0px; border-color:#000"></a>
+      <br><br><br><br>
+      <ul class="nav nav-pills nav-stacked">
+             <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+         <li><a href="#读书" data-toggle="tab">读书</a></li>
+             <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+         <li><a href="#生活" data-toggle="tab">生活</a></li>
+             <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+         <li><a href="#科研" data-toggle="tab">科研</a></li>
+             <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+         <li><a href="#技术" data-toggle="tab">技术</a></li>
+        
+        <li><a href="#tags" data-toggle="tab">标签</a></li>  
+        <li><a class="pjaxlink" href="/pages/archive.html">归档</a></li>
+        <li><a class="pjaxlink" href="/pages/about.html">关于</a></li>  
+        <!-- <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>
+        <li><a class="pjaxlink" href="/pages/archive.html"><i class="fa fa-archive fa-lg"></i></a></li>
+        <li><a class="pjaxlink" href="/pages/about.html"><i class="fa fa-user fa-lg"></i></a></li>
+        这是原来现实汉字的代码，我改为了图标 -->
+      </ul>
+      <div class="aside1_bottom">
+        <table class="table table-condensed">
+          <tr>
+            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-lg" style="color:#fff;"></i></a></td>
+            <td><a href="mailto:chaochancs@gmail.com"><i class="fa fa-envelope-o fa-lg" style="color:#fff;"></i></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-10 col-xs-10 aside2">
+      <div class="row">
+        <div class="tab-content"> 
+           
+            <div class="tab-pane" id="读书">
+              <div class="list-group">
+                <!--<h2 class="center">读书</h2>-->     <!--原来aside2上面的大标题-->
+                
+                  <a href="/2015/01/29/Book-List-2015.html" class="list-group-item-lay pjaxlink">2015年阅读书单</a>
+                
+                  <a href="/2014/08/25/Golden-Line.html" class="list-group-item-lay pjaxlink">每个人的金线</a>
+                
+                  <a href="/2014/07/24/dream-of-red-chamber.html" class="list-group-item-lay pjaxlink">读《红楼梦》</a>
+                
+                  <a href="/2014/01/01/Book-List-2014.html" class="list-group-item-lay pjaxlink">2014年阅读书单</a>
+                
+                  <a href="/2013/01/01/Book-List-2013.html" class="list-group-item-lay pjaxlink">2013年阅读书单</a>
+                
+                  <a href="/2012/01/01/Book-List-2012.html" class="list-group-item-lay pjaxlink">2012年阅读书单</a>
+                
+                  <a href="/2011/01/01/Book-List-2011.html" class="list-group-item-lay pjaxlink">2011年阅读书单</a>
+                
+                  <a href="/2010/01/01/Book-List-2010.html" class="list-group-item-lay pjaxlink">2010年阅读书单</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="生活">
+              <div class="list-group">
+                <!--<h2 class="center">生活</h2>-->     <!--原来aside2上面的大标题-->
+                
+                  <a href="/2013/12/31/Can-not.html" class="list-group-item-lay pjaxlink">学不会</a>
+                
+                  <a href="/2012/12/31/To-my-friends.html" class="list-group-item-lay pjaxlink">致友人书</a>
+                
+                  <a href="/2011/06/01/Seeker-reply-me.html" class="list-group-item-lay pjaxlink">Seeker的回信</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="科研">
+              <div class="list-group">
+                <!--<h2 class="center">科研</h2>-->     <!--原来aside2上面的大标题-->
+                
+                  <a href="/2015/03/23/Newton-QuasiNewton-Method.html" class="list-group-item-lay pjaxlink">牛顿法与拟牛顿法（DFP BFGS LBFGS VLBFGS）</a>
+                
+                  <a href="/2015/02/04/Group-Meeting.html" class="list-group-item-lay pjaxlink">大数据机器学习初探---南大李武军</a>
+                
+                  <a href="/2014/11/26/Presentation-at-Chinese-Academy-of-Science.html" class="list-group-item-lay pjaxlink">我的报告 Decentralized Privacy-Preserving Low-Rank Matrix Completion</a>
+                
+                  <a href="/2014/11/10/Basic-Algorithms-of-Convex-Opt.html" class="list-group-item-lay pjaxlink">凸优化的一些基础算法</a>
+                
+                  <a href="/2014/11/09/What-is-NP-Hard.html" class="list-group-item-lay pjaxlink">什么是 P, NP, NP-complete, NP-hard</a>
+                
+                  <a href="/2014/10/01/Alibaba-Big-Data.html" class="list-group-item-lay pjaxlink">阿里巴巴大数据竞赛回顾与总结</a>
+                
+                  <a href="/2014/09/11/Matlab-tips.html" class="list-group-item-lay pjaxlink">Matlab科研小贴士</a>
+                
+                  <a href="/2014/08/31/Papers-about-average-consensus.html" class="list-group-item-lay pjaxlink">动态一致平均问题算法-EXTRA和DAC</a>
+                
+                  <a href="/2014/08/22/Average-Consensus.html" class="list-group-item-lay pjaxlink">对于一致平均问题的理解</a>
+                
+                  <a href="/2014/07/27/norms-of-vector-and-matrix.html" class="list-group-item-lay pjaxlink">各类范数</a>
+                
+                  <a href="/2014/07/25/matrix-completion.html" class="list-group-item-lay pjaxlink">低秩矩阵补全</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="技术">
+              <div class="list-group">
+                <!--<h2 class="center">技术</h2>-->     <!--原来aside2上面的大标题-->
+                
+                  <a href="/2015/02/13/Cplus-on-MAC.html" class="list-group-item-lay pjaxlink">Mac以及Windows上搭建C++工作环境</a>
+                
+                  <a href="/2015/01/30/Git-Resources.html" class="list-group-item-lay pjaxlink">Git常用命令速查表</a>
+                
+                  <a href="/2014/12/06/Make-resume-by-LaTeX.html" class="list-group-item-lay pjaxlink">在Mac上用LaTeX写漂亮的简历</a>
+                
+                  <a href="/2014/10/31/Yosemite-Matlab-Running-Error.html" class="list-group-item-lay pjaxlink">Yosemite OS X 10.10 Matlab 2012a停止工作的解决办法</a>
+                
+                  <a href="/2014/10/07/Mac-Rar-Unrar.html" class="list-group-item-lay pjaxlink">Mac安装unrar和rar解压缩工具</a>
+                
+                  <a href="/2014/09/30/Linux4.html" class="list-group-item-lay pjaxlink">Linux 4：磁盘与文件系统管理</a>
+                
+                  <a href="/2014/09/19/Linux3.html" class="list-group-item-lay pjaxlink">Linux 3：文件与目录管理</a>
+                
+                  <a href="/2014/09/17/Linux2.html" class="list-group-item-lay pjaxlink">Linux 2：文件权限与目录配置</a>
+                
+                  <a href="/2014/09/16/Markdown-Math.html" class="list-group-item-lay pjaxlink">Markdown输入LaTeX数学公式</a>
+                
+                  <a href="/2014/09/13/Linux.html" class="list-group-item-lay pjaxlink">Linux 1：登陆与在线求助man page</a>
+                
+                  <a href="/2014/09/12/Linux-Problems.html" class="list-group-item-lay pjaxlink">Linux 0：实际问题</a>
+                
+                  <a href="/2014/08/12/Remote-Desk-from-Mac-to-Windows-PC.html" class="list-group-item-lay pjaxlink">Mac远程桌面连接Windows</a>
+                
+                  <a href="/2014/08/10/Using-LaTeX-with-Sublime-and-Skim-for-Mac.html" class="list-group-item-lay pjaxlink">在Mac上通过Sublime、Skim编辑LaTeX</a>
+                
+                  <a href="/2014/07/31/LaTeX-beamer-slides.html" class="list-group-item-lay pjaxlink">LaTeX beamer制作幻灯片</a>
+                
+              </div>
+            </div>
+                
+          <div class="tab-pane" id="tags">
+            <div class="panel-group" id="accordion">
+              <!--<h2 class="center">标签</h2>-->
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#随感">随感</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="随感" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/08/25/Golden-Line.html' class="list-group-item pjaxlink">
+                        每个人的金线
+                      </a>
+                    
+                      <a  href='/2014/07/24/dream-of-red-chamber.html' class="list-group-item pjaxlink">
+                        读《红楼梦》
+                      </a>
+                    
+                      <a  href='/2011/06/01/Seeker-reply-me.html' class="list-group-item pjaxlink">
+                        Seeker的回信
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#年终总结">年终总结</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="年终总结" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/12/31/Can-not.html' class="list-group-item pjaxlink">
+                        学不会
+                      </a>
+                    
+                      <a  href='/2012/12/31/To-my-friends.html' class="list-group-item pjaxlink">
+                        致友人书
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Optimization">Optimization</a>
+                      <span class="badge pull-right">7</span>
+                    </h4>
+                  </div>
+                  <div id="Optimization" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/03/23/Newton-QuasiNewton-Method.html' class="list-group-item pjaxlink">
+                        牛顿法与拟牛顿法（DFP BFGS LBFGS VLBFGS）
+                      </a>
+                    
+                      <a  href='/2015/02/04/Group-Meeting.html' class="list-group-item pjaxlink">
+                        大数据机器学习初探---南大李武军
+                      </a>
+                    
+                      <a  href='/2014/11/26/Presentation-at-Chinese-Academy-of-Science.html' class="list-group-item pjaxlink">
+                        我的报告 Decentralized Privacy-Preserving Low-Rank Matrix Completion
+                      </a>
+                    
+                      <a  href='/2014/11/10/Basic-Algorithms-of-Convex-Opt.html' class="list-group-item pjaxlink">
+                        凸优化的一些基础算法
+                      </a>
+                    
+                      <a  href='/2014/08/31/Papers-about-average-consensus.html' class="list-group-item pjaxlink">
+                        动态一致平均问题算法-EXTRA和DAC
+                      </a>
+                    
+                      <a  href='/2014/08/22/Average-Consensus.html' class="list-group-item pjaxlink">
+                        对于一致平均问题的理解
+                      </a>
+                    
+                      <a  href='/2014/07/25/matrix-completion.html' class="list-group-item pjaxlink">
+                        低秩矩阵补全
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Math">Math</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="Math" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/03/23/Newton-QuasiNewton-Method.html' class="list-group-item pjaxlink">
+                        牛顿法与拟牛顿法（DFP BFGS LBFGS VLBFGS）
+                      </a>
+                    
+                      <a  href='/2015/02/04/Group-Meeting.html' class="list-group-item pjaxlink">
+                        大数据机器学习初探---南大李武军
+                      </a>
+                    
+                      <a  href='/2014/11/26/Presentation-at-Chinese-Academy-of-Science.html' class="list-group-item pjaxlink">
+                        我的报告 Decentralized Privacy-Preserving Low-Rank Matrix Completion
+                      </a>
+                    
+                      <a  href='/2014/11/09/What-is-NP-Hard.html' class="list-group-item pjaxlink">
+                        什么是 P, NP, NP-complete, NP-hard
+                      </a>
+                    
+                      <a  href='/2014/07/27/norms-of-vector-and-matrix.html' class="list-group-item pjaxlink">
+                        各类范数
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#LaTeX">LaTeX</a>
+                      <span class="badge pull-right">4</span>
+                    </h4>
+                  </div>
+                  <div id="LaTeX" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/12/06/Make-resume-by-LaTeX.html' class="list-group-item pjaxlink">
+                        在Mac上用LaTeX写漂亮的简历
+                      </a>
+                    
+                      <a  href='/2014/09/16/Markdown-Math.html' class="list-group-item pjaxlink">
+                        Markdown输入LaTeX数学公式
+                      </a>
+                    
+                      <a  href='/2014/08/10/Using-LaTeX-with-Sublime-and-Skim-for-Mac.html' class="list-group-item pjaxlink">
+                        在Mac上通过Sublime、Skim编辑LaTeX
+                      </a>
+                    
+                      <a  href='/2014/07/31/LaTeX-beamer-slides.html' class="list-group-item pjaxlink">
+                        LaTeX beamer制作幻灯片
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Mac">Mac</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="Mac" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/02/13/Cplus-on-MAC.html' class="list-group-item pjaxlink">
+                        Mac以及Windows上搭建C++工作环境
+                      </a>
+                    
+                      <a  href='/2014/12/06/Make-resume-by-LaTeX.html' class="list-group-item pjaxlink">
+                        在Mac上用LaTeX写漂亮的简历
+                      </a>
+                    
+                      <a  href='/2014/10/31/Yosemite-Matlab-Running-Error.html' class="list-group-item pjaxlink">
+                        Yosemite OS X 10.10 Matlab 2012a停止工作的解决办法
+                      </a>
+                    
+                      <a  href='/2014/10/07/Mac-Rar-Unrar.html' class="list-group-item pjaxlink">
+                        Mac安装unrar和rar解压缩工具
+                      </a>
+                    
+                      <a  href='/2014/08/12/Remote-Desk-from-Mac-to-Windows-PC.html' class="list-group-item pjaxlink">
+                        Mac远程桌面连接Windows
+                      </a>
+                    
+                      <a  href='/2014/08/10/Using-LaTeX-with-Sublime-and-Skim-for-Mac.html' class="list-group-item pjaxlink">
+                        在Mac上通过Sublime、Skim编辑LaTeX
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Matlab">Matlab</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Matlab" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/10/31/Yosemite-Matlab-Running-Error.html' class="list-group-item pjaxlink">
+                        Yosemite OS X 10.10 Matlab 2012a停止工作的解决办法
+                      </a>
+                    
+                      <a  href='/2014/09/11/Matlab-tips.html' class="list-group-item pjaxlink">
+                        Matlab科研小贴士
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Linux">Linux</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="Linux" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/30/Linux4.html' class="list-group-item pjaxlink">
+                        Linux 4：磁盘与文件系统管理
+                      </a>
+                    
+                      <a  href='/2014/09/19/Linux3.html' class="list-group-item pjaxlink">
+                        Linux 3：文件与目录管理
+                      </a>
+                    
+                      <a  href='/2014/09/17/Linux2.html' class="list-group-item pjaxlink">
+                        Linux 2：文件权限与目录配置
+                      </a>
+                    
+                      <a  href='/2014/09/13/Linux.html' class="list-group-item pjaxlink">
+                        Linux 1：登陆与在线求助man page
+                      </a>
+                    
+                      <a  href='/2014/09/12/Linux-Problems.html' class="list-group-item pjaxlink">
+                        Linux 0：实际问题
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#MachineLearning">MachineLearning</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="MachineLearning" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/02/04/Group-Meeting.html' class="list-group-item pjaxlink">
+                        大数据机器学习初探---南大李武军
+                      </a>
+                    
+                      <a  href='/2014/10/01/Alibaba-Big-Data.html' class="list-group-item pjaxlink">
+                        阿里巴巴大数据竞赛回顾与总结
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Git">Git</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Git" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/01/30/Git-Resources.html' class="list-group-item pjaxlink">
+                        Git常用命令速查表
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="col-md-13 col-lg-13 col-sm-13 col-xs-13 aside3">
+        <div id="container">
+          <div id="pjax">
+            <div class="row">
+  <div class="col-md-13 aside3-title">
+    <br>
+    <h2 id="#identifier">大数据机器学习初探---南大李武军</h2>
+    2015年02月04日
+  </div>
+  <div class="col-md-13 aside3-content">
+    <hr>
+    <div id="content">
+      <p>每周的组会大概会持续2小时。如果是主讲，就需要花更多的时间去准备报告内容。之前，组会开完我就不管了，缺乏总结思考。而这样子的话实质上意义就不大了，没有内化为自己的知识，也没有什么critical thinking。从现在开始，记录每一次组会的思考。</p>
+
+<p>常言道：亡羊补牢，为时未晚。T.T</p>
+
+<h3>Outline</h3>
+
+<ul>
+<li>Learning to Hash</li>
+<li>Distributed Learning</li>
+<li>Stochastic Learning</li>
+</ul>
+
+<p>有一个形象的比喻是这样说的，大数据是金矿，云计算是采矿技术，大数据机器学习是冶金技术。</p>
+
+<p>大数据机器学习面临的挑战，一是存储，而是计算速度，三是网络。</p>
+
+<p>哈希学习，在内存、硬盘、cpu、通信上有优势；
+分布式学习在内存、硬盘、cpu上有优势，但会增加通信成本；随机学习在内存、硬盘、cpu方面有优势。</p>
+
+<h3>Learning to Hash</h3>
+
+<p>主讲人：大师兄</p>
+
+<p>最近邻搜索在大数据背景下，会出现维数灾难，存储成本也高，查询速度也慢。解决方法之一是保相似性哈希，可以降低维数并减少存储成本。通常用海明距离（hamming distance）来表征哈希值之间的差异。哈希方案也具有较快的查询速度，通常具有常数或者次线性的搜索时间复杂度；即使是穷举搜索也可以被接受，因为海明距离计算起来是很快的。</p>
+
+<p>哈希函数学习的两个阶段：</p>
+
+<ol>
+<li>Projection Stage（dimension reduction）</li>
+<li>Quantization Stage</li>
+</ol>
+
+<p>贡献：</p>
+
+<ul>
+<li>Isotropic Hash</li>
+</ul>
+
+<p>思想：学习一个正交阵（幻灯片21页），其目的是让大于某一阈值的feature的重要程度是一样的。</p>
+
+<ul>
+<li>Supervised Hashing with Latent Factor Models</li>
+<li>Supervised Multimodal Hashing with SCM</li>
+<li>Multiple-Bit Quantization</li>
+</ul>
+
+<h3>Distributed Learning</h3>
+
+<p>主讲人：我</p>
+
+<p>主要内容：</p>
+
+<ol>
+<li>文章：Coupled Group Lasso for Web-Scale CTR Prediction</li>
+<li>文章：Distributed Power-Law Graph Computing</li>
+</ol>
+
+<h4>文章1</h4>
+
+<p>为了解决在线广告的CTR（click through rate）预测，即当某广告展示给某用户时，它被该用户点击的概率，通常的方法是LR（logistic regression），即逻辑回归。但LR的一个短板是，因其是线性的，所以无法将用户与广告之间某些微妙的非线性关系纳入。注意LR中，正则项若为2范数平方，称为标准逻辑回归；正则项若为1范数，问题通常被叫做Lasso。所以需要一种新的方法。</p>
+
+<p>这里的贡献是：</p>
+
+<ol>
+<li>CGL的似然定义中，可以纳入用户与广告之间的某些非线性关系的考量。</li>
+<li>正则项改为参数的2-1范数，目的是是用户特征向量参数W、广告特征向量参数V中更多的行为0，行为0说明该行对应的feature没作用，即达到删除冗余feature的作用。</li>
+</ol>
+
+<p>分布式实现。这个算法具有较好的扩展性，一个master，若干slave，类似于并行计算，从而实现分布式。</p>
+
+<h4>文章2</h4>
+
+<p>GP（graph partitioning）图分割的方法有两种：边分割；点分割。点分割在分布式计算中的通信成本会比图分割小，原因在于在不同的machine上，点分割只需保留点的copy，而边分割需要同时保留点与边的copy。</p>
+
+<p>切割degree大的点，即邻居多的点可以降低通信成本。</p>
+
+<h3>Stochastic Learning</h3>
+
+<p>主讲人：浩锋</p>
+
+<p>思想：在需要用到所有节点上的信息时，通信代价往往很大，这时可以随机的选取某一个节点上的信息（比如梯度）作为替代品。</p>
+
+<h3>资料</h3>
+
+<p>【1】<a href="http://cs.nju.edu.cn/lwj/slides/BigLearning.pdf">幻灯片</a></p>
+
+<p>【2】<a href="http://jmlr.csail.mit.edu/proceedings/papers/v32/yan14.pdf">Coupled Group Lasso for
+Web-Scale CTR Prediction in Display Advertising</a></p>
+
+<p>【3】<a href="http://papers.nips.cc/paper/5396-distributed-power-law-graph-computing-theoretical-and-empirical-analysis.pdf">Distributed Power-law Graph Computing:
+Theoretical and Empirical Analysis</a></p>
+
+    </div>
+    <hr>
+    <div id="disqus_thread">
+  <button type="button" name="huaijin" class="btn btn-default show-commend">	
+  	<i class="fa fa-comment-o fa-lg" style="color: #16a095;"></i>     <!-- 修改显示评论按钮图标-->
+  </button>
+</div>
+
+  </div>
+  <!-- 目录 -->
+  <div id="content_table" style="position:fixed;right:20px;top:120px;display:none;">
+    <div class="panel panel-success">
+      <div class="panel-body" id="nav"></div>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position:fixed;right:15px;top:62px;">
+  <button id="content_btn" class="btn btn-primary" style="width:43px; height:34px;">
+    <i class="fa fa-lg fa-plus"></i>
+  </button>
+</div>
+<div style="position:fixed;right:15px;top:20px;">
+  <button id="nav_btn" class="btn btn-primary">
+    <i class="fa fa-lg fa-navicon"></i>
+  </button>
+</div>
+<script type="text/javascript" src="/public/js/jquery.js"></script>
+<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+<script src="/public/js/jquery.pjax.js"></script>
+<script src="/public/js/prettify/prettify.js"></script>
+<script src="/public/js/base.js"></script>
+<script src="/public/js/jquery.scrollUp.js"></script>
+<script>
+    $('a[href="#读书"]').tab('show');
+</script>
+
+
+<!--button是右上方导航和显示目录的按钮-->
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54262064-1', 'huaijin.info');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
