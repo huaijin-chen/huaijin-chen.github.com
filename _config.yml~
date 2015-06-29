@@ -23,15 +23,15 @@ favicon: /public/img/deer3.png
 
 # google analytics 设置
 ga:
-  id: UA-64600841-1 
+  id: UA-64600841-1
   url: huaijin.info
 
 # disqus 设置
-disqus:
-  shortname: huaijin
+#disqus:
+#  shortname: huaijin
 
-duoshuo :
-    short_name : huaijin
+duoshuo:
+    short_name: huaijin
 
 
 # 主题设置，自动激活某个标签
