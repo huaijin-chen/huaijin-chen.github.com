@@ -30,6 +30,10 @@ ga:
 disqus:
   shortname: huaijin
 
+duoshuo :
+    short_name : huaijin
+
+
 # 主题设置，自动激活某个标签
 active: 读书
 
