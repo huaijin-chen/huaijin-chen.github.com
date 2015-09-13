@@ -19,10 +19,15 @@ layout: base
             <div class="panel-heading">{{ book.title }}</div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-4 col-xs-12 center">
-                  <img src="{{ book.cover }}" alt="cover" class="img-thumbnail">
-                </div>
                 <div class="col-md-8 col-xs-12">
+
+                  <table class="table table-bordered">
+					  <tr><td width = 100px> 
+                <div class="col-md-4 col-xs-12 ">
+                  <img src="{{ book.cover }}" alt="cover" class="img-thumbnail">
+		  </div></td>
+		  <td>
+
                   <table class="table table-bordered">
                     <tbody>
                       <tr><td style="width:80px;">作者</td><td>{{ book.author }}</td></tr>
@@ -46,6 +51,10 @@ layout: base
                       <tr><td>评论</td><td>{{ book.description }}</td></tr>
                     </tbody>
                   </table>
+				  </td>
+				  </tr>
+                  </table>
+
                 </div>
               </div>  
             </div>
@@ -54,7 +63,23 @@ layout: base
       {% endfor %}
     </div>
     <hr>
-    {% include disqus.html %}
+<!-- 多说评论框 start -->
+<div class="ds-thread" ata-thread-key={{page.id}} data-title={{page.title}} data-url="{% if site.url %}{{ site.url }}{% endif %}{{ page.url }}"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"huaijin"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
   </div>
 </div>
 

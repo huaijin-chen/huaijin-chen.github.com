@@ -810,6 +810,7 @@ td, th {
 .glyphicon-hand-left:before {
     content: "\e128"
 }
+                  </table>
 
 .glyphicon-hand-up:before {
     content: "\e129"
@@ -1168,8 +1169,8 @@ img {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     display: inline-block;
-    width: 50% \9;
-    max-width: 100%;
+   /* width: 30% \9;*/
+    max-width: 100px;
     height: auto
 }
 
