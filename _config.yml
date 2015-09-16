@@ -18,8 +18,8 @@ url: http://huaijin.info
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-#gavatar: /public/img/deer3.png
-#favicon: /public/img/deer3.png
+gavatar: /public/img/deer3.png
+favicon: /public/img/cv.png
 
 # google analytics 设置
 ga:
@@ -27,8 +27,8 @@ ga:
   url: huaijin.info
 
 # disqus 设置
-#disqus:
-#  shortname: huaijin
+disqus:
+  shortname: huaijin
 
 #duoshuo:
 #    short_name: huaijin

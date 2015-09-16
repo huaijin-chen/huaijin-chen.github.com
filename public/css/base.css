@@ -19,8 +19,9 @@ body, html {
 /* 左侧导航栏 */
 .aside1 {
   /*background-color: #1f2c39;*/
-  background-color: #333;
+  background-color: #474d57;
   /*background-image: url(/public/img/bg_grid.jpg);*/
+  with:128px;
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
@@ -68,7 +69,7 @@ body, html {
   /*background-color: #fafaf6;*/
   /*background-image: url(/public/img/body_bg.jpg);*/
 
-  background-color: #888;
+  background-color: #303030;
   height: 100%;
   border-right: 2px solid #303030;
   overflow-y: auto;

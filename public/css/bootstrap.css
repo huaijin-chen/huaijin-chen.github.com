@@ -1209,7 +1209,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
-    color: inherit
+    color: #1#16a085;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small,
@@ -1544,8 +1544,8 @@ code, kbd, pre, samp {
 code {
     padding: 2px 4px;
     font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
+    color: #fff;
+    background-color: rgba(44,62,80,0.7);
     border-radius: 4px
 }
 
