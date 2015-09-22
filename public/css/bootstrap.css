@@ -1170,7 +1170,7 @@ img {
     transition: all .2s ease-in-out;
     display: inline-block;
    /* width: 30% \9;*/
-    max-width: 100px;
+    max-width: 100%;
     height: auto
 }
 
@@ -1209,7 +1209,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
-    color: #1#16a085;
+    color: #16a085;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small,
