@@ -5,10 +5,14 @@ categories: 技术
 tags: DeepLearning Caffe
 ---
 
-ArgMaxLayer 是多SoftMaxLayer输出的对图像预测概率进行再一部的处理，从而得出top K的预测结果和相对应的概率值（if out_mal_val==ture ）。
+ArgMaxLayer 是多SoftMaxLayer输出的对图像预测概率进行进一步的处理，从而得出top K的预测结果和相对应的概率值（`if out_mal_val==ture`  ）。
 
 ##主要函数
-- `Reshape`:  初始化输出Blob top 如果out_max_val_为true，第一通道放预测top k的label，第二通道存储top 1 的概率值。
+- `Reshape`:  初始化输出Blob top 如果`out_max_val_`为true，第一通道放预测top k的label，第二通道存储top 1 的概率值。
+下图是`k=3`的示意图
+
+![](/public/img/caffe/argMaxLayer.png)
+
 {% highlight  C++%}
 template <typename Dtype>
 void ArgMaxLayer<Dtype>::Reshape(const vector<Blob<Dtype>*>& bottom,
@@ -23,7 +27,7 @@ void ArgMaxLayer<Dtype>::Reshape(const vector<Blob<Dtype>*>& bottom,
 }
 {% endhighlight %}
 
--`Forward_cpu`：在得到top K的label和相对的概率至存储在top 中。采用的是pair和局部排序算法。
+- `Forward_cpu`：在得到top K的label和相对的概率至存储在top 中。采用的是pair和局部排序算法。
 
 {% highlight  C++%}
 template <typename Dtype>
