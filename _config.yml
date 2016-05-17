@@ -38,7 +38,7 @@ duoshuo:
 active: 读书
 
 # 首页除了最新文章外显示分类
-cates: 
+cates: DeepLearning 
 
 # 中文本地化
 locals:
