@@ -1,5 +1,5 @@
 permalink: /:year/:month/:day/:title.html
-paginate: 10
+paginate: 1
 markdown: kramdown 
 
 # 作者信息
@@ -39,8 +39,6 @@ active: 读书
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Optimization
-  - LaTeX
 
 # 中文本地化
 locals:
